@@ -1,5 +1,7 @@
 body
 {
-  font-size: 40pt;
-  background-color:#2B2B2B;
+  margin:0;
+	padding:0;
+	line-height: 20px;
+  background-color:#212121;
 }
