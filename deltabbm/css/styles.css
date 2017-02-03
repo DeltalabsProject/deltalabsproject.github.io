@@ -1,12 +1,57 @@
-body
-{
-  margin:0;
+body {
+	margin:0;
 	padding:0;
 	line-height: 20px;
-  background-color:#212121;
+	color:#212121;
+	background-color:#2B2B2B;
+	background-image: none;
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
-
-#header_bg{
+a{
+	color:#ffbc2b;
+	text-decoration:none;
+	background-image: none;
+}
+a:focus,a:hover {
+  color: #ffcc80;
+  outline: 0;
+  text-decoration: underline;
+}
+::selection {
+	background-color:#009688;
+	color:#FBBC05;
+}
+::-moz-selection {
+	background:#009688;
+	color:#FBBC05;
+}
+::-webkit-selection {
+	background:#009688;
+	color:#FBBC05;
+}
+.default {
+	color:#009688;
+	text-decoration:none;
+	background-image: none;
+}
+.default:focus,.default:hover {
+	color:#4AADA4;
+	outline: 0;
+    text-decoration: underline;
+}
+.default_black {
+	color:#424242;
+	text-decoration:none;
+	background-image: none;
+}
+.default_black:focus, .default_black:hover {
+	color:#424242;
+	outline: 0;
+    text-decoration: underline;
+}
+#teal_bg{
 	z-index:-1;
 	position:fixed;
 	width:100%;
@@ -14,8 +59,7 @@ body
 	top:0;
 	background-color: #009688;
 }
-
-.main-card{
+.base-card{
 	width:600px;
 	margin:0 auto;
 	color:#212121;
@@ -24,9 +68,271 @@ body
 	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 	overflow:auto;
 }
-
-#header_main-card{
+#quick_base-card{
 	padding:30px;
 	margin-top:10vh;
 	text-align:center;
+}
+#quick_base-card #photo_container{
+	float: left;
+}
+#quick_base-card #description_container{
+	float: left;
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+#quick_base-card #photo{
+	height:128px;
+	width:128px;
+	border-radius:150px;
+}
+#quick_base-card #name{
+	font-weight:normal;
+	font-size:19px;
+	color:#009688;
+}
+#quick_base-card #location{
+	font-weight:normal;
+	font-size:15px;
+	color:#616161;
+}
+#quick_base-card #description{
+	font-weight:normal;
+	font-size:15px;
+	color:#616161;
+}
+#about_base-card{
+	position:relative;
+	padding:15px 10px 15px 10px;
+	margin-top:22px;
+}
+.title i{
+	position:relative;
+	left:-10px;
+}
+hr{
+	width:60%;
+	color: #616161;
+	background-color: #616161;
+	height:1px;
+	border:0;
+}
+#contact_base-card{
+	position:relative;
+	padding:15px 35px 15px 35px;
+	margin-top:22px;
+	margin-bottom:40px;
+}
+#contact_base-card>.tab{
+	margin-top:3px;
+	margin-bottom:8px;
+}
+#contact_base-card>.tab>.title{
+	font-size:16px;
+	color:#009688;
+}
+#contact_base-card>.tab>.content{
+	padding-top:10px;
+	text-align:center;
+}
+#contact_base-card>.tab>.content>.contacts{
+	margin:0 15px 0 15px;
+	display:inline-block;
+	font-size:14px;
+	color:#212121;
+}
+#contact_base-card a{
+	color:#616161;
+	text-decoration:none;
+}
+#contact_base-card a:hover{
+	color:#9E9E9E;
+}
+/* MEDIA */
+@media (min-width: 961px){
+	
+ }
+@media (min-width: 481px) and (max-width: 960px) {
+	.base-card{
+		width:80%;
+	}
+}
+@media (max-width: 480px){
+	.base-card{
+		width:90%;
+	}
+	#quick_base-card #photo_container{
+		float: none;
+	}
+	#quick_base-card #description_container{
+		float: none;
+		text-align: center;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+}
+/*! Footer */
+.ui-footer {
+  border-top: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background: #212121;
+  text-align: center;
+  color: #616161;
+  padding-top: 12px;
+  text-size: 14px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.ui-footer p {
+	text-size: 13px;
+}
+.ui-footer i {
+	margin-left: 1px;
+	margin-right: 1px;
+	color: #ffbc2b
+}
+.space-match {
+  padding-bottom: 55px !important;
+}
+/*! Social Button */
+.social-space {
+ float: left;
+ width: 25%;
+ min-height: 1px;
+ position: relative;
+ padding-left: 5px;
+ padding-right: 5px;
+ }
+ /*! More Menu */
+ #more_base-card{
+	position:relative;
+	padding:15px 32px 8px 32px;
+	margin-top:22px;
+}
+#more_base-card>.tab{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#more_base-card>.tab>.more_title{
+	font-size:16px;
+	text-align: center;
+	color:#009688;
+}
+#more_base-card>.tab>.content{
+	padding:5px 15px 5px 15px;
+	position:relative;
+}
+#more_base-card .element{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#more_base-card .element .more_desc{
+	color:#616161;
+	font-size:15px;
+	text-align: center;
+	margin-bottom:3px;
+}
+#more_base-card .element .more_info{
+	color:#616161;
+	text-align: center;
+	font-size:14px;
+}
+#more_base-card .element .more{
+	color:#616161;
+	text-align: center;
+	font-size:14px;
+	margin-top: 3px;
+}
+.more_title i{
+	position:relative;
+	text-align: center;
+	left:-10px;
+}
+#more_base-card>.tab>.error{
+	font-size:25px;
+	font-style: bold;
+	text-align: center;
+	color:#ffbc2b;
+}
+/* Homepages */
+ #homepages_base-card{
+	position:relative;
+	padding:15px 20px 8px 20px;
+	margin-top:22px;
+}
+#homepages_base-card>.tab{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#homepages_base-card>.tab>.homepages_title{
+	font-size:16px;
+	color:#009688;
+}
+#homepages_base-card>.tab>.content{
+	padding:5px 15px 5px 15px;
+	position:relative;
+}
+#homepages_base-card .element{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#homepages_base-card .element .homepages_desc{
+	color:#616161;
+	font-size:15px;
+	margin-bottom:3px;
+}
+#homepages_base-card .element .homepages_info{
+	color:#616161;
+	font-size:15px;
+}
+#homepages_base-card .element .homepages{
+	color:#616161;
+	font-size:14px;
+	margin-top: 3px;
+}
+.homepages_title i{
+	position:relative;
+	left:-10px;
+}
+#homepages_base-card>.tab>.error{
+	font-size:25px;
+	font-style: bold;
+	color:#ffbc2b;
+}
+/*! Ripple */
+.wave {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.wave .ripple {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  pointer-events: none;
+}
+/*Add new color*/
+.wave.ripple-dark .ripple {
+  background: rgba(0, 0, 0, 0.1);
+}
+.wave .animated {
+  animation: ripple 0.6s linear;
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
 }
