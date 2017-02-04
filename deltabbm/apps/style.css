@@ -252,10 +252,11 @@ a:hover{
 }
 
 #faq_card>.tab>.content>.answer{
-	font-weight:italic;
+	font-weight:normal;
 	font-size:15px;
 	color:#616161;
-	margin-left:20px;
+	text-align:justify;
+	margin-left:25px;
 	margin-bottom:5px;
 }
 
