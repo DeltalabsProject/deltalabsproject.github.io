@@ -233,16 +233,29 @@ a:hover{
 	margin-bottom:10px;
 }
 
+#faq_card>.tab>.title{
+	font-size:16px;
+	color:#0082fa;
+	text-align: center;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
 #faq_card>.tab>.content{
 	padding:5px 10px 5px 10px;
 	position:relative;
 }
 
+#faq_card>.tab>.content>.question{
+	font-weight:bold;
+	font-size:15px;
+}
+
 #faq_card>.tab>.content>.answer{
-	font-weight:normal;
+	font-weight:italic;
 	font-size:15px;
 	color:#616161;
-	margin-left:10px;
+	margin-left:20px;
 	margin-bottom:5px;
 }
 
