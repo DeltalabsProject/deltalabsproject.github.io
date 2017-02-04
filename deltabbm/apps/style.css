@@ -221,6 +221,31 @@ a:hover{
 	position:relative;
 }
 
+/* Faq Card */
+#faq_card{
+	position:relative;
+	padding:15px 20px 8px 20px;
+	margin-top:22px;
+}
+
+#faq_card>.tab{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#faq_card>.tab>.content{
+	padding:5px 10px 5px 10px;
+	position:relative;
+}
+
+#faq_card>.tab>.content>.answer{
+	font-weight:normal;
+	font-size:15px;
+	color:#616161;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+
 /*! Download Button */
 .button-download{
     background: #fb6765;
