@@ -468,32 +468,27 @@ hr{
     text-align: center;
 }
 
-#spoiler tombol{
-    background: #fb6765;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+#spoiler tombol {
+    background: #aa65c7;
     color: #fff;
-    position: relative;
-    height: 36px;
-    margin: 0px 8px;
-    min-width: 64px;
-    padding: 0 16px;
-    display: inline-block;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    overflow: hidden;
-    will-change: box-shadow;
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
     text-align: center;
-    line-height: 36px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 0px 0px #883da7;
     vertical-align: middle;
+    cursor: pointer;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease-in-out;
+}
+
+#spoiler tombol:hover, #flippy tombol:focus {
+    background: #9e4fbf;
+    outline: none;
 }
 
 #flippanel {
